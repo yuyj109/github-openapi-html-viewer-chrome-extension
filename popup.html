@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GitHub OpenAPI &amp; HTML Viewer</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <h1>GitHub OpenAPI &amp; HTML Viewer</h1>
+      <p id="status" role="status">Set the default OpenAPI viewer.</p>
+      <label for="renderer-select">OpenAPI viewer</label>
+      <select id="renderer-select">
+        <option value="redoc">ReDoc</option>
+        <option value="swagger">Swagger UI</option>
+      </select>
+      <button id="done-button" type="button">Done</button>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

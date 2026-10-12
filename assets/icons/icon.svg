@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title>GitHub OpenAPI and HTML Viewer</title>
+  <rect width="512" height="512" rx="108" fill="#24292f"/>
+  <rect x="86" y="86" width="340" height="340" rx="48" fill="#0d1117" stroke="#58a6ff" stroke-width="18"/>
+  <path d="M196 190 132 256l64 66M316 190l64 66-64 66M282 164l-52 184" fill="none" stroke="#f0f6fc" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"/>
+  <circle cx="361" cy="145" r="25" fill="#3fb950"/>
+  <circle cx="361" cy="367" r="25" fill="#3fb950"/>
+  <path d="M361 170v65M361 277v65M361 256h-54" fill="none" stroke="#3fb950" stroke-linecap="round" stroke-width="18"/>
+</svg>

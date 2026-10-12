@@ -1,0 +1,59 @@
+#github-preview-button {
+  align-items: center;
+  appearance: none;
+  background-color: var(--button-default-bgColor-rest, #f6f8fa);
+  border: var(--borderWidth-thin, 0.0625rem) solid var(--button-default-borderColor-rest, #d1d9e0);
+  border-radius: var(--borderRadius-medium, 0.375rem);
+  box-shadow: var(--button-default-shadow-resting, 0 1px 0 0 #1f23280a);
+  color: var(--button-default-fgColor-rest, #25292e);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: var(--text-body-size-small, 0.75rem);
+  font-weight: var(--base-text-weight-medium, 500);
+  gap: var(--control-small-gap, 0.25rem);
+  height: var(--control-small-size, 1.75rem);
+  justify-content: space-between;
+  min-width: max-content;
+  padding: 0 var(--control-small-paddingInline-condensed, 0.5rem);
+  text-align: center;
+  text-decoration: none;
+  transition: color 80ms cubic-bezier(0.65, 0, 0.35, 1), fill 80ms cubic-bezier(0.65, 0, 0.35, 1), background-color 80ms cubic-bezier(0.65, 0, 0.35, 1), border-color 80ms cubic-bezier(0.65, 0, 0.35, 1);
+  user-select: none;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+#github-preview-button:hover {
+  background-color: var(--button-default-bgColor-hover, #f3f4f6);
+}
+
+#github-preview-button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+#github-preview-button.github-preview-floating-button {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  z-index: 2147483647;
+}
+
+.github-preview-error {
+  color: var(--fgColor-danger, #cf222e);
+  font-size: 0.75rem;
+  margin-left: 0.25rem;
+}
+
+.github-preview-floating-button + .github-preview-error {
+  background: var(--bgColor-default, #fff);
+  border: 1px solid var(--borderColor-danger-emphasis, #cf222e);
+  border-radius: 0.375rem;
+  max-width: 20rem;
+  padding: 0.5rem;
+  position: fixed;
+  right: 1rem;
+  top: 3.5rem;
+  z-index: 2147483647;
+}

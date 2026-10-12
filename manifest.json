@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub OpenAPI & HTML Viewer",
+  "version": "1.0.3",
+  "description": "Preview files from GitHub in a safe, dedicated tab.",
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "32": "assets/icons/icon-32.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  },
+  "permissions": ["declarativeContent", "storage"],
+  "host_permissions": [
+    "https://github.com/*",
+    "https://raw.githubusercontent.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "incognito": "split",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*",
+        "https://raw.githubusercontent.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "GitHub OpenAPI & HTML Viewer",
+    "default_icon": {
+      "16": "assets/icons/icon-16.png",
+      "32": "assets/icons/icon-32.png",
+      "48": "assets/icons/icon-48.png",
+      "128": "assets/icons/icon-128.png"
+    },
+    "default_popup": "popup.html"
+  }
+}

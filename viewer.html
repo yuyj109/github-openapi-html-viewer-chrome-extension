@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GitHub OpenAPI &amp; HTML Viewer</title>
+    <link rel="stylesheet" href="viewer.css">
+  </head>
+  <body>
+    <header id="viewer-toolbar" class="toolbar">
+      <div class="brand">GitHub OpenAPI &amp; HTML Viewer</div>
+      <a id="source-link" rel="noreferrer">Source</a>
+      <button
+        id="toolbar-toggle"
+        class="toolbar-toggle"
+        type="button"
+        aria-controls="viewer-toolbar"
+        aria-expanded="true"
+        aria-label="Hide header"
+        title="Hide header"
+      >
+        <svg class="toolbar-toggle-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m6 15 6-6 6 6"></path>
+        </svg>
+      </button>
+    </header>
+    <main>
+      <div id="status" role="status">Loading preview…</div>
+      <div id="html-preview" hidden></div>
+      <div id="openapi-preview" hidden></div>
+    </main>
+    <script type="module" src="viewer.js"></script>
+  </body>
+</html>
